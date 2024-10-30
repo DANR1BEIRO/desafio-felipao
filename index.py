@@ -1,2 +1,2 @@
-nome = Daniel
+nome = "Daniel"
 print(f"oi {nome}")
