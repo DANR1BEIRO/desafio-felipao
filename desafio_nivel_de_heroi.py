@@ -31,11 +31,11 @@ def heroi_nome():
 def heroi_xp():
     while True:
         try:
-            xp = float(input("Informe a quantidade de XP: "))
-            if xp >= 0:
+            xp = int(input("Informe a quantidade de XP: "))
+            if xp > 0:
                 return xp
             else:
-                print("A quantidade de XP não pode ser menor do que 0!")
+                print("A quantidade de XP não pode ser igual ou menor do que 0!")
         except ValueError:
             print("Use apenas números para a XP!")
             
@@ -61,10 +61,6 @@ def main():
     nome = heroi_nome()
     xp = heroi_xp()
     nivel = heroi_nivel(xp)
-    
-    if xp < 0:
-        print("A quantidade de XP não pode ser menor do que zero")
-        return
     
     print(f"O herói de nome {nome} tem {xp:.0f} de XP e está no nível {nivel}")
     
