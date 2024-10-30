@@ -1,1 +1,2 @@
-print("oi")
+nome = Daniel
+print(f"oi {nome}")
