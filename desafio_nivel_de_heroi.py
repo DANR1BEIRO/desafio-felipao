@@ -62,7 +62,7 @@ def main():
     xp = heroi_xp()
     nivel = heroi_nivel(xp)
     
-    print(f"O herói de nome {nome} tem {xp:.0f} de XP e está no nível {nivel}")
+    print(f"O herói de nome {nome} tem {xp} de XP e está no nível {nivel}")
     
 main()
      
